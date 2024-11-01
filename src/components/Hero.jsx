@@ -3,7 +3,11 @@ import { discount, robot } from "../assets";
 import GetStarted from "./GetStarted";
 
 const Hero = () => (
-  <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+  <section
+    id="home"
+    className={`flex md:flex-row flex-col ${styles.paddingY}`}
+    data-aos="fade-in"
+  >
     <div
       className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
     >

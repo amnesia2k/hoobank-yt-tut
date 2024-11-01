@@ -5,6 +5,8 @@ import Button from "./Button";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div
+    data-aos="slide-up"
+    data-aos-duration="1500"
     className={`flex flex-row p-6 rounded-[20px] ${
       index !== features.length - 1 ? "mb-6" : "mb-0"
     } feature-card`}
@@ -33,7 +35,11 @@ FeatureCard.propTypes = {
 const Business = () => {
   return (
     <section id="features" className={layout.section}>
-      <div className={layout.sectionInfo}>
+      <div
+        data-aos="slide-up"
+        data-aos-duration="700"
+        className={layout.sectionInfo}
+      >
         <h2 className={styles.heading2}>
           You do the business, <br className="sm:block hidden" /> we’ll handle
           the money.
