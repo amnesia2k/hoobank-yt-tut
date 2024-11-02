@@ -6,11 +6,13 @@ const Footer = () => (
   <section className={`${styles.flexCenter} ${styles.paddingFooterY} flex-col`}>
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-1 flex flex-col justify-start mr-10">
-        <img
-          src={logo}
-          alt="hoobank_logo"
-          className="w-[266px] h-[72px] object-contain"
-        />
+        <a href="/">
+          <img
+            src={logo}
+            alt="hoobank_logo"
+            className="w-[170px] h-[52px] object-contain"
+          />
+        </a>
         <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>
           A new way to make the payments easy, reliable and secure.
         </p>
